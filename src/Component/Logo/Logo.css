@@ -1,0 +1,12 @@
+#logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+img{
+    width: 30px;
+    height: auto;
+    border-radius: 50%;
+}

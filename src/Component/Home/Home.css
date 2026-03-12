@@ -1,0 +1,114 @@
+#home {
+    background: linear-gradient(270deg,rgba(168, 192, 255, 0.5) 0%, rgba(214, 226, 255, 0.35) 50%, rgba(240, 245, 255, 0.25) 100%);
+    height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#home h1{
+    font-size: 2.2rem;
+}
+#home h3{
+    color:#0071E9 ;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+#home p{
+    color:gray;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    max-width: 520px;
+    line-height: 1.6;
+}
+#home .image{
+    position: relative;
+    width: 360px;
+    height: 420px;
+    animation: floatCard 4s ease-in-out infinite;
+}
+#home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+#home .image::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#6EA8FF;
+    border-radius: 20px;
+    top: 20px;
+    left: -20px;
+    z-index: 1;
+}
+@keyframes floatCard{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-12px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media (max-width: 1024px){
+    #home{
+        gap: 30px;
+        padding: 12vh 30px 40px;
+    }
+    #home .image{
+        width: 300px;
+        height: 360px;
+    }
+    #home h1{
+        font-size: 2rem;
+    }
+    #home h3{
+        font-size: 1.4rem;
+    }
+    #home p{
+        font-size: 1.1rem;
+    }
+} 
+@media (max-width: 768px){
+    #home{
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 14vh 20px 40px;
+    }
+    #home .image{
+        width: 260px;
+        height: 320px;
+    }
+    #home h1{
+        font-size: 1.8rem;
+    }
+    #home h3{
+        font-size: 1.3rem;
+    }
+    #home p{
+        font-size: 1rem;
+    }
+} 
+@media (max-width: 480px){
+    #home .image{
+        width: 220px;
+        height: 280px;
+    }
+    #home h1{
+        font-size: 1.5rem;
+    }
+    #home p{
+        font-size: 0.95rem;
+    }
+}

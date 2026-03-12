@@ -1,0 +1,23 @@
+#source {
+    cursor: pointer;
+}
+#source i {
+    padding-right: 5px;
+}
+#source p {
+    color: black !important;
+    font-size: 1rem !important;
+}
+#source p:hover {
+    color: #0071E9 !important;
+}
+#source a {
+    text-decoration: none;
+    color: black;          
+    font-size: 1.5rem;
+    display: inline-flex;   
+    align-items: center;
+}
+#source a:hover {
+    color: #0071E9;       
+}

@@ -1,0 +1,83 @@
+#about{
+    padding: 10vh 20px;
+}
+#about h1{
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+    text-align: center;
+}
+#about .section-title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #0071E9;
+    border-radius: 999px;
+    margin: 8px auto 0;
+}
+#about .describe{
+    max-width: 1000px;
+    margin: 25px auto 0;
+    border-radius: 12px;
+    background-color: #ECF1FB;
+    border-left: 4px solid #0071E9;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 30px;
+    line-height: 1.7;
+}
+#about .describe p{
+    margin-bottom: 20px;
+}
+#about .describe p:last-child{
+    margin-bottom: 0;
+}
+#about .describe{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#about .describe:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+@media (max-width: 1024px){
+    #about{
+        padding: 9vh 25px;
+    }  
+    #about h1{
+        font-size: 2rem;
+    }
+    #about .describe{
+        max-width: 700px;
+        padding: 25px;
+        font-size: 1.05rem;
+    }
+}
+@media (max-width: 768px){
+    #about{
+        padding: 8vh 20px;
+    }
+    #about h1{
+        font-size: 1.8rem;
+    }
+    #about .describe{
+        max-width: 100%;
+        padding: 22px;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px){
+    #about{
+        padding: 7vh 15px;
+    }
+    #about h1{
+        font-size: 1.6rem;
+    }
+    #about .describe{
+        padding: 18px;
+        font-size: 0.95rem;
+        border-left: 3px solid #0071E9;
+    }
+    #about .describe p{
+        margin-bottom: 15px;
+    }
+}
